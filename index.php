@@ -38,7 +38,7 @@ require_once("header.php");
         <div class="bottom-display-col">
             <div class="">
                 <button style="background-size: 100%; background: #00897B;
-                        height: 15vh; width: 26vw ; border: 0; box-shadow: 2px 5px 5px #00796B; font-size: 13vh; font-weight: bold; color: white;">
+                        height: 15vh; width: 26vw ; border: 0; box-shadow: 3px 5px 10px #00796B; font-size: 13vh; font-weight: bold; color: white; border-radius: 50%">
                     <img src="./style/images/thermo.png" height="70%">
                     <div class="temp-label">
                         21° C
@@ -49,13 +49,13 @@ require_once("header.php");
     
             <div class="">
                 <button style="background-size: 100%; background: #00897B;
-                         height: 15vh; width: 26vw; border: 0; box-shadow: 2px 5px 5px #00796B;
+                         height: 15vh; width: 26vw; border: 0; box-shadow: 3px 5px 10px #00796B; border-radius: 50%;
 ">
 
-                    <img src="./style/images/cloud.png" height="80%">
+                    <img src="./style/images/cloud.png" height="75%">
                 </button>
                 <div class="co2-label">
-                    2, 3 ppm
+                    500 ppm
                 </div>
             </div>
         </div>
