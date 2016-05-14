@@ -6,7 +6,7 @@ require_once("header.php");
 ?>
 <body class="main">
     <header class="header-row" >
-        <div class="logo">
+        <div>
             <img src="style/images/fortum.png"></div>
 
 
