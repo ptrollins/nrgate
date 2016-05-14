@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	background: #51b497;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.main{
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: column;
+}
+
+header{
+	background-color: #1a433f;
+	order: 1; height: 5vh; flex: auto;
+}
+
+.logo {
+	float: left;
+	width: 50%
+}
+
+.power-graph-row{
+	order: 2; height: 50vh; flex: auto;
+}
+
+.power-graph-button{
+	background: #51b497;
+	height:100%;
+	width: 100%;
+	margin: 0;
+}
+
+.power-reading-row{
+	background-color:#49997B;
+	order: 3; height: 10vh; flex: auto;
+}
+
+.power-label{
+	font-size: 5vh;
+	color:white
+}
+
+.bottom-display-row{
+	order: 4; height: 35vh; flex: auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	flex-flow: column;
+}
+
+.bottom-display-col{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	flex-flow: row;
+}
