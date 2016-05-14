@@ -30,6 +30,9 @@ require_once("header.php");
                 <button style="background-size: 100%; background: #00897B;
                         height: 15vh; width: 26vw ; border: 0; box-shadow: 2px 5px 5px #00796B; font-size: 13vh; font-weight: bold; color: white;">
                     <img src="./style/images/thermo.png" height="70%">
+                    <div class="temp-label">
+                        21° C
+                    </div>
                 </button>
 
             </div>
@@ -41,6 +44,10 @@ require_once("header.php");
 
                     <img src="./style/images/cloud.png" height="70%">
                 </button>
+                <div class="co2-label">
+                    2, 3 ppm
+                </div>
+
             </div>
         </div>
     </div>

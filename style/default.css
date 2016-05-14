@@ -47,6 +47,29 @@ header{
 
 }
 
+.co2-label{
+    padding-top: 10%;
+    font-size: 3vh;
+    color:white;
+    text-align: center;
+    line-height: 150%;
+    letter-spacing: 10px;
+    font-weight: 100;
+
+}
+
+
+.temp-label{
+    padding-top: 10%;
+    font-size: 3vh;
+    color:white;
+    text-align: center;
+    line-height: 150%;
+    letter-spacing: 10px;
+    font-weight: 100;
+
+}
+
 .bottom-display-row{
 	order: 4; height: 35vh; flex: auto;
 	display: -webkit-flex;
