@@ -31,7 +31,7 @@ header{
 
 }
 .power-graph-row{
-	order: 2; height: 50vh; flex: auto;
+	order: 2; height: 40vh; flex: auto;
 }
 
 .power-graph-button{
@@ -86,6 +86,17 @@ header{
 	-webkit-justify-content: space-around;
 	justify-content: space-around;
 	flex-flow: column;
+}
+
+
+
+.footer{
+    background-color: #1a433f;
+    display: -webkit-flex;
+    display: flex;
+    order: 5; height: 9vh; flex: auto;
+    justify-content: space-around;
+
 }
 
 .bottom-display-col{

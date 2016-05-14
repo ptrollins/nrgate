@@ -49,9 +49,7 @@ require_once("header.php");
     
             <div class="">
                 <button style="background-size: 100%; background: #00897B;
-                         height: 15vh; width: 26vw; border: 0; box-shadow: 3px 5px 10px #00796B; border-radius: 50%;
-">
-
+                         height: 15vh; width: 26vw; border: 0; box-shadow: 3px 5px 10px #00796B; border-radius: 50%;">
                     <img src="./style/images/cloud.png" height="75%">
                 </button>
                 <div class="co2-label">
@@ -59,8 +57,21 @@ require_once("header.php");
                 </div>
             </div>
         </div>
-
     </div>
+
+
+            <button class="footer" style="
+            background-size: 100%;
+            background: #00897B;
+            border: 0;
+            font-size: 3vh;
+            color:white;
+            text-align: center;
+            letter-spacing: 20px;
+            font-weight: 200;
+            box-shadow: inset 0px 7px 7px #00796B;">
+                <img src="./style/images/arrow.png" width="50%">
+            </button>
 
 </body>
 </html>
