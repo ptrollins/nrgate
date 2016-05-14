@@ -22,7 +22,8 @@ header{
 
 
 .clock {
-    font-size: 4vh;
+    font-size: 3.5vh;
+    line-height: 150%;
     color:white;
     letter-spacing: 10px;
     font-weight: bold;
