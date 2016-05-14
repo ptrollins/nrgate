@@ -52,7 +52,7 @@ require_once("header.php");
                          height: 15vh; width: 26vw; border: 0; box-shadow: 2px 5px 5px #00796B;
 ">
 
-                    <img src="./style/images/cloud.png" height="70%">
+                    <img src="./style/images/cloud.png" height="80%">
                 </button>
                 <div class="co2-label">
                     2, 3 ppm
