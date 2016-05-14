@@ -8,9 +8,19 @@ require_once("header.php");
     <header class="header-row" >
         <div class="logo">
             <img src="style/images/fortum.png"></div>
+
+
+
+        <div id="clock" class="clock">
+        </div>
+
+
+        <div class="logo">
             <img src="style/images/acre.png"></div>
+        </div>
 
     </header>
+
 
     <div class="power-graph-row">
         <button class="power-graph-button">
@@ -47,9 +57,10 @@ require_once("header.php");
                 <div class="co2-label">
                     2, 3 ppm
                 </div>
-
             </div>
         </div>
+
     </div>
+
 </body>
 </html>

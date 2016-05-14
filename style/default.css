@@ -8,19 +8,31 @@ body {
 	display: -webkit-flex;
 	display: flex;
 	flex-flow: column;
+    width: 100%;
 }
 
 header{
 	background-color: #1a433f;
 	order: 1; height: 5vh; flex: auto;
+    padding: 1%;
 }
 
 .logo {
-    padding-left: 15%;
 	float: left;
-	width: 50%
+    padding-left: 3%;
+	width: 33%
 }
 
+.clock {
+    float: left;
+    padding-top: 1%;
+    font-size: 3vh;
+    color:white;
+    letter-spacing: 10px;
+    font-weight: bold;
+    text-align: center;
+
+}
 .power-graph-row{
 	order: 2; height: 50vh; flex: auto;
 }

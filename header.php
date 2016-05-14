@@ -26,7 +26,7 @@
             now.setTime(nowMS);
             var clock = document.getElementById('clock');
             if(clock){
-                clock.innerHTML = now.toTimeString();//adjust to suit
+                clock.innerHTML = now.toTimeString().slice(0,8);//adjust to suit
             }
         }
     </script>
