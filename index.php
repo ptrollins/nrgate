@@ -69,8 +69,10 @@ require_once("header.php");
             text-align: center;
             letter-spacing: 20px;
             font-weight: 200;
+            width: 100%;
             box-shadow: inset 0px 7px 7px #00796B;">
                 <img src="./style/images/arrow.png" width="50%">
+                
             </button>
 
 </body>
