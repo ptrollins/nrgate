@@ -17,13 +17,19 @@ require_once("header.php");
 
     <div class="power-graph-row">
         <button class="power-graph-button">
-            <canvas id="powerChart" height="900" width="1400"></canvas>
+
+            <canvas id="powerChart" height="800" width="1400">
+
+            </canvas>
+
+
+
         </button>
     </div>
 
     <div class="power-reading-row">
         <div class="power-label">
-            500 W
+    500 W
         </div>
     </div>
 
