@@ -1,16 +1,21 @@
 <?php
 
 // Retrieve sensor data stream
-function fetchSensorData() {
+function fetchSensorData($timePeriod) {
 
     global $mysqli;
     $stmt = $mysqli->prepare("SELECT
-		DataID,
-		SensorData,
-		ReadDate
-		FROM UserDetails
+		near_door,
+		in_room,
+		temperature,
+		humidity,
+		air_quality,
+		lux,
+		watts,
+		time_read
+		FROM SensorData
 		WHERE
-		UserName = ?
+		time_read > ('" . date('Y-m-d H:i:s',time()) . "' - ?)
 		LIMIT 1");
     $stmt->bind_param("s", $username);
 
@@ -18,10 +23,10 @@ function fetchSensorData() {
     $stmt->bind_result($UserID, $UserName, $FirstName, $LastName, $Email, $Password, $MemberSince, $Active);
     while ($stmt->fetch()){
         $row = array('UserID' => $UserID,
-            'UserName' => $UserName,
-            'FirstName' => $FirstName,
-            'LastName' => $LastName,
-            'Email' => $Email,
+            'dataid' => $UserName,
+            'near_door' => $FirstName,
+            'in_room' => $LastName,
+            'temp' => $Email,
             'Password' => $Password,
             'MemberSince' => $MemberSince,
             'Active' => $Active);

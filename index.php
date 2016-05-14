@@ -6,10 +6,10 @@ require_once("header.php");
 ?>
 <body class="main">
     <header class="header-row" >
-
         <div class="logo">
             <img src="style/images/fortum.png"></div>
             <img src="style/images/acre.png"></div>
+
     </header>
 
     <div class="power-graph-row">
@@ -38,12 +38,11 @@ require_once("header.php");
                 <button style="background-size: 100%; background: #00897B;
                          height: 15vh; width: 26vw; border: 0; box-shadow: 2px 5px 5px #00796B;
 ">
+
                     <img src="./style/images/cloud.png" height="70%">
                 </button>
             </div>
-
         </div>
-
     </div>
 </body>
 </html>
