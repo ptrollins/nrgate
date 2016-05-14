@@ -6,8 +6,10 @@ require_once("header.php");
 ?>
 <body class="main">
     <header class="header-row" >
-        <div class="logo"><img src="style/images/fortum.png"></div>
-        <div style="float: right; width: 50%" align="center"><img src="style/images/acre.png"></div>
+
+        <div class="logo">
+            <img src="style/images/fortum.png"></div>
+            <img src="style/images/acre.png"></div>
     </header>
 
     <div class="power-graph-row">
@@ -17,23 +19,25 @@ require_once("header.php");
     </div>
 
     <div class="power-reading-row">
-        <div class="power-label">50 WATTS</div>
+        <div class="power-label">
+            500 W
+        </div>
     </div>
 
     <div class="bottom-display-row">
         <div class="bottom-display-col">
             <div class="">
-                <button style="background-size: 100%; background: #49997B;
-                        height: 15vh; width: auto; font-size: 13vh; font-weight: bold; color: white;">
+                <button style="background-size: 100%; background: #00897B;
+                        height: 15vh; width: 26vw ; border: 0; box-shadow: 2px 5px 5px #00796B; font-size: 13vh; font-weight: bold; color: white;">
                     <img src="./style/images/thermo.png" height="70%">
                 </button>
 
-                <!--canvas id="tempChart" style="height: 100%; width: 30%"></canvas-->
             </div>
     
             <div class="">
-                <button style="background-size: 100%; background: #49997B;
-                         height: 15vh; width: auto">
+                <button style="background-size: 100%; background: #00897B;
+                         height: 15vh; width: 26vw; border: 0; box-shadow: 2px 5px 5px #00796B;
+">
                     <img src="./style/images/cloud.png" height="70%">
                 </button>
             </div>
