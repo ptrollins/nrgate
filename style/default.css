@@ -31,7 +31,7 @@ header{
 
 }
 .power-graph-row{
-	order: 2; height: 40vh; flex: auto;
+	order: 2; height: 43vh; flex: auto;
 }
 
 .power-graph-button{
@@ -80,7 +80,7 @@ header{
 }
 
 .bottom-display-row{
-	order: 4; height: 35vh; flex: auto;
+	order: 4; height: 32vh; flex: auto;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: space-around;
