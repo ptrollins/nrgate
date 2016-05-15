@@ -1,7 +1,41 @@
 <?php
 
 // Retrieve sensor data stream
-function fetchSensorData($timePeriod) {
+function fetchSensorData() {
+
+    global $mysqli;
+    $stmt = $mysqli->prepare("SELECT
+		data_id,
+		near_door,
+		in_room,
+		temperature,
+		humidity,
+		air_quality,
+		lux,
+		watts,
+		time_read
+		FROM SensorData
+		ORDER  BY data_id DESC
+		LIMIT 1");
+    $stmt->execute();
+    $stmt->bind_result($dataID, $nearDoor, $inRoom, $temperature, $humidity, $airQuality, $lux, $watts, $timeRead);
+    while ($stmt->fetch()){
+        $row = array(
+            'dataid' => $dataID,
+            'neardoor' => $nearDoor,
+            'inroom' => $inRoom,
+            'temp' => $temperature,
+            'humidity' => $humidity,
+            'airquality' => $airQuality,
+            'lux' => $lux,
+            'watts' => $watts,
+            'timeread' => $timeRead);
+    }
+    $stmt->close();
+    return ($row);
+}
+
+function fetchSensorDataByTime($timePeriod) {
 
     global $mysqli;
     $stmt = $mysqli->prepare("SELECT
@@ -507,4 +541,4 @@ function truncate_chars($text, $limit, $ellipsis = '...') {
   if( strlen($text) > $limit )
     $text = trim(substr($text, 0, $limit)) . $ellipsis;
   return $text;
-}
+} */

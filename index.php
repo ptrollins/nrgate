@@ -28,9 +28,13 @@ require_once("header.php");
     </div>
 
     <div class="power-reading-row">
+<<<<<<< Updated upstream
         <div class="power-label">
     500 W
         </div>
+=======
+        <div class="power-label" id="powerlable"></div>
+>>>>>>> Stashed changes
     </div>
 
     <div class="bottom-display-row">
@@ -39,9 +43,7 @@ require_once("header.php");
                 <button style="background-size: 100%; background: #00897B;
                         height: 15vh; width: 26vw ; border: 0; box-shadow: 3px 5px 10px #00796B; font-size: 13vh; font-weight: bold; color: white; border-radius: 50%">
                     <img src="./style/images/thermo.png" height="70%">
-                    <div class="temp-label">
-                        21° C
-                    </div>
+                    <div class="temp-label" id="temp-label"></div>
                 </button>
 
             </div>
@@ -51,9 +53,7 @@ require_once("header.php");
                          height: 15vh; width: 26vw; border: 0; box-shadow: 3px 5px 10px #00796B; border-radius: 50%;">
                     <img src="./style/images/cloud.png" height="75%">
                 </button>
-                <div class="co2-label">
-                    500 ppm
-                </div>
+                <div class="co2-label" id="co2-label"></div>
             </div>
         </div>
     </div>

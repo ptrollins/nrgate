@@ -1,5 +1,8 @@
 <?php
 
-$powerUsed = 50;
+require_once("config.php");
+require_once("functions.php");
 
-print($powerUsed);
+$alldata = fetchSensorData();
+
+print(json_encode($alldata));

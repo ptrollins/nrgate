@@ -2,7 +2,7 @@
 
 	//error reporting and warning display.
 	//error_reporting(E_ALL);
-	//ini_set('display_errors', 'On');
+	ini_set('display_errors', 'On');
 
 	if (!ini_get('date.timezone')) {
 		date_default_timezone_set('GMT');
