@@ -7,34 +7,23 @@ require_once("header.php");
 <body class="main">
     <header class="header-row" >
         <div>
-            <img src="style/images/fortum.png"></div>
-        <div id="clock" class="clock">
+            <img src="style/images/fortum.png">
         </div>
+        <div id="clock" class="clock"></div>
         <div class="logo">
-            <img src="style/images/acre.png"></div>
+            <img src="style/images/acre.png">
         </div>
     </header>
 
     <div class="power-graph-row">
         <button class="power-graph-button">
-
             <canvas id="powerChart" height="800" width="1400">
-
             </canvas>
-
-
-
         </button>
     </div>
 
     <div class="power-reading-row">
-<<<<<<< Updated upstream
-        <div class="power-label">
-    500 W
-        </div>
-=======
-        <div class="power-label" id="powerlable"></div>
->>>>>>> Stashed changes
+        <div class="power-label" id="power-label"></div>
     </div>
 
     <div class="bottom-display-row">

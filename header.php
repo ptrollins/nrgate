@@ -17,7 +17,7 @@
         var now = new Date(<?php echo time() * 1000 ?>);
 
         function startInterval(){
-            setInterval('updateTime();', 1000);
+            setInterval('updateTime();', 999);
         }
 
         startInterval();//start it right away
