@@ -34,7 +34,7 @@ header{
 .power-graph-row{
 	display: -webkit-flex;
 	display: flex;
-	order: 2; height: 43vh; flex: auto;
+	order: 2; height: 42vh; flex: auto;
 }
 
 .power-graph-button{
@@ -122,13 +122,23 @@ header{
 }
 
 .power-off-row{
-	background-color:#00897B;
+	background-color:#32b2a6;
 	display: -webkit-flex;
 	display: flex;
-	order: 6; height: 86vh; flex: auto;
+	order: 6; height: 76vh; flex: auto;
 	-webkit-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
 }
 
+.feedback-row{
+	background-color:#00897B;
+	display: -webkit-flex;
+	display: flex;
+	order: 7; height: 10vh; flex: auto;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
