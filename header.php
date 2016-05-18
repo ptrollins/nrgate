@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php date_default_timezone_set('Europe/Helsinki'); ?><!DOCTYPE html>
 <html>
 
 <head>
@@ -15,7 +15,10 @@
     <script src="lib/nrgate.js"></script>
     <script >
         var now = new Date(<?php echo time() * 1000 ?>);
-
+        var clock = document.getElementById('clock');
+        if(clock){
+            clock.innerHTML = now.toTimeString().slice(0,5);//adjust to suit
+        }
         function startInterval(){
             setInterval('updateTime();', 999);
         }
