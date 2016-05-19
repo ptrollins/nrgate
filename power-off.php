@@ -27,7 +27,7 @@ require_once("header.php");
     </div>
 
     <a href="feedback.php" class="footer-button" id="power-off-footer">
-        FEEDBACK?
+        REPORT ISSUE
     </a>
 
 </body>

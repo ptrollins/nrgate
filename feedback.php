@@ -15,10 +15,52 @@ require_once("header.php");
     </div>
 </header>
 
-<div class="feedback-row">
+    <a href="index.php" class="header-button">
+        <img src="./style/images/down-arrow.png" width="50%">
+    </a>
 
 
-</div>
+
+<label class="feedback-row">
+  <input class="checkbox" type="checkbox"> 
+     <span class="feedback-row">
+ 		LIGHTBULB OUTAGE
+ 	</span>
+</label>
+
+<label class="feedback-row">
+  <input class="checkbox" type="checkbox"> 
+     <span class="feedback-row">
+BROKEN WINDOW
+ 	</span>
+</label>
+
+<label class="feedback-row">
+  <input class="checkbox" type="checkbox" name="day" value="LIGHTBULB OUT"> 
+     <span class="feedback-row">
+BROKEN DOOR
+ 	</span>
+</label>
+
+<label class="feedback-row">
+  <input class="checkbox" type="checkbox" name="day" value="LIGHTBULB OUT"> 
+     <span class="feedback-row">
+POWER OUTAGE
+ 	</span>
+</label>
+
+<label class="feedback-row">
+  <input class="checkbox" type="checkbox"> 
+     <span class="feedback-row">
+HEATING ISSUE 	</span>
+</label>
+
+<label class="feedback-row">
+  <input class="checkbox" type="checkbox" > 
+     <span class="feedback-row">
+BROKEN TV
+ 	</span>
+</label>
 
 </body>
 </html>
