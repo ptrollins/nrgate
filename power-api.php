@@ -1,12 +1,12 @@
 <?php
 
-
+include 
 require_once("config.php");
 require_once("header.php");
 require_once("PhpSerial.php");
 
 // Send kill signal to Arduino
-define('SERIAL_DEVICE', '/dev/ttyUSB4');
+//define('SERIAL_DEVICE', '/dev/ttyUSB4');
 
 $comPort = "COM5"; //The com port address.
 

@@ -9,6 +9,7 @@ body {
 	display: flex;
 	flex-flow: column;
     width: 100%;
+	overflow: hidden;
 }
 
 header{
@@ -34,7 +35,7 @@ header{
 .power-graph-row{
 	display: -webkit-flex;
 	display: flex;
-	order: 2; height: 42vh; flex: auto;
+	order: 3; height: 42vh; flex: auto;
 }
 
 .power-graph-button{
@@ -48,7 +49,7 @@ header{
 	background-color:#00897B;
 	display: -webkit-flex;
 	display: flex;
-	order: 3; height: 10vh; flex: auto;
+	order: 4; height: 10vh; flex: auto;
 	-webkit-justify-content: center;
 	justify-content: center;
 }
@@ -63,7 +64,7 @@ header{
 
 }
 
-.co2-label{
+.button-label{
     padding-top: 10%;
     font-size: 3vh;
     color:white;
@@ -71,22 +72,10 @@ header{
     line-height: 150%;
     letter-spacing: 10px;
     font-weight: 100;
-}
-
-
-.temp-label{
-    padding-top: 10%;
-    font-size: 3vh;
-    color:white;
-    text-align: center;
-    line-height: 150%;
-    letter-spacing: 10px;
-    font-weight: 100;
-
 }
 
 .bottom-display-row{
-	order: 4; height: 32vh; flex: auto;
+	order: 5; height: 32vh; flex: auto;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: space-around;
@@ -102,10 +91,10 @@ header{
 	flex-flow: row;
 }
 
-.footer{
-    display: -webkit-flex;
-    display: flex;
-    order: 5; height: 9vh; flex: auto;
+.header-button{
+	display: -webkit-flex;
+	display: flex;
+	order: 2; height: 10vh; flex: auto;
 	-webkit-justify-content: space-around;
 	justify-content: space-around;
 
@@ -121,11 +110,34 @@ header{
 	box-shadow: inset 0 7px 7px #00796B;
 }
 
+.footer-button{
+    display: -webkit-flex;
+    display: flex;
+    order: 10; height: 10vh; flex: auto;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	-webkit-align-items: center;
+	align-items: center;
+
+	background-size: 100%;
+	background: #00897B;
+	border: 0;
+	font-size: 3vh;
+	color:white;
+	text-align: center;
+	letter-spacing: 20px;
+	font-weight: 200;
+	width: 100%;
+	box-shadow: inset 0 7px 7px #00796B;
+
+	text-decoration: none;
+}
+
 .power-off-row{
 	background-color:#32b2a6;
 	display: -webkit-flex;
 	display: flex;
-	order: 6; height: 76vh; flex: auto;
+	order: 6; height: 74vh; flex: auto;
 	-webkit-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;

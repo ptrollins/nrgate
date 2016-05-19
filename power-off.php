@@ -15,7 +15,7 @@ require_once("header.php");
         </div>
     </header>
 
-    <a href="index.php" class="footer">
+    <a href="index.php" class="header-button">
         <img src="./style/images/down-arrow.png" width="50%">
     </a>
 
@@ -26,11 +26,9 @@ require_once("header.php");
 
     </div>
 
-    <div class="feedback-row" style="font-size: 300%" >
-        <button class="icon-label-button" style="background-size: 100%; background: #00897B;
-                         height: 10vh; width: 26vw; border: 0; font-size: 13vh; font-weight: bold; color: white;">
-            <a href="feedback.php" class="co2-label" id="co2-label">FEEDBACK</a>
-        </button>
-    </div>
+    <a href="feedback.php" class="footer-button" id="power-off-footer">
+        FEEDBACK?
+    </a>
+
 </body>
 </html>
