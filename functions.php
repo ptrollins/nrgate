@@ -14,7 +14,7 @@ function fetchSensorData() {
 		lux,
 		watts,
 		time_read
-		FROM SensorData
+		FROM sensordata
 		ORDER  BY data_id DESC
 		LIMIT 1");
     $stmt->execute();
@@ -47,7 +47,7 @@ function fetchSensorDataByTime($timePeriod) {
 		lux,
 		watts,
 		time_read
-		FROM SensorData
+		FROM sensordata
 		WHERE
 		time_read > ('" . date('Y-m-d H:i:s',time()) . "' - ?)
 		LIMIT 1");
@@ -74,7 +74,7 @@ function writeSensorData($sensorDataStr){
     $sensorDataArr = parseSensorData($sensorDataStr);
 
     $stmt = $mysqli->prepare(
-        "INSERT INTO SensorData (
+        "INSERT INTO sensordata (
 		near_door,
 		in_room,
 		temperature,
@@ -122,13 +122,13 @@ function parseSensorData($sensorDataStr){
 //    $watts = substr($sensorDataStr, 14, 4);
 
     $sensorDataArr = array(
-        'nearDoor' => substr($sensorDataStr, 0),
-        'inRoom' => substr($sensorDataStr, 1),
-        'temperature' => substr($sensorDataStr, 2, 2),
-        'humidity' => substr($sensorDataStr, 4, 2),
-        'airQuality' => substr($sensorDataStr, 6, 4),
-        'lux' => substr($sensorDataStr, 10, 4),
-        'watts' => substr($sensorDataStr, 14, 4)
+        'nearDoor' => intval(substr($sensorDataStr, 0)),
+        'inRoom' => intval(substr($sensorDataStr, 1)),
+        'temperature' => intval(substr($sensorDataStr, 2, 2)),
+        'humidity' => intval(substr($sensorDataStr, 4, 2)),
+        'airQuality' => intval(substr($sensorDataStr, 6, 4)),
+        'lux' => intval(substr($sensorDataStr, 10, 4)),
+        'watts' => intval(substr($sensorDataStr, 14, 4))
         );
 
     return $sensorDataArr;
