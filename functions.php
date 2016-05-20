@@ -96,8 +96,8 @@ function writeSensorData($sensorDataStr){
         '" . date('Y-m-d H:i:s',time()) . "'
 		)"
     );
-    $stmt->bind_param("iiiiiii", $sensorDataArr[0], $sensorDataArr[1], $sensorDataArr[2],
-            $sensorDataArr[3], $sensorDataArr[4], $sensorDataArr[5], $sensorDataArr[6]);
+    $stmt->bind_param("iiiiiii", $sensorDataArr['nearDoor'], $sensorDataArr['inRoom'], $sensorDataArr['temperature'],
+            $sensorDataArr['humidity'], $sensorDataArr['airQuality'], $sensorDataArr['lux'], $sensorDataArr['watts']);
     //print_r($stmt);
     $result = $stmt->execute();
     //print_r($result);
@@ -126,7 +126,7 @@ function parseSensorData($sensorDataStr){
 
     //$sensorDataArr = str_getcsv($sensorDataStr, ",");
     $sensorDataArr = array(
-        'nearDoor' => substr($sensorDataStr, 0,1),
+        'nearDoor' => intval(substr($sensorDataStr, 0,1)),
         'inRoom' => intval(substr($sensorDataStr, 1,1)),
         'temperature' => intval(substr($sensorDataStr, 2, 2)),
         'humidity' => intval(substr($sensorDataStr, 4, 2)),
