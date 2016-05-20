@@ -124,15 +124,15 @@ function parseSensorData($sensorDataStr){
 //    $lux = substr($sensorDataStr, 10, 4);
 //    $watts = substr($sensorDataStr, 14, 4);
 
-    $sensorDataArr = str_getcsv($sensorDataStr, ",");
+    //$sensorDataArr = str_getcsv($sensorDataStr, ",");
     $sensorDataArr = array(
-        'nearDoor' => intval(substr($sensorDataStr, 0)),
-        'inRoom' => intval(substr($sensorDataStr, 2)),
-        'temperature' => intval(substr($sensorDataStr, 4, 2)),
-        'humidity' => intval(substr($sensorDataStr, 7, 2)),
-        'airQuality' => intval(substr($sensorDataStr, 10, 4)),
-        'lux' => intval(substr($sensorDataStr, 15, 4)),
-        'watts' => intval(substr($sensorDataStr, 20, 4))
+        'nearDoor' => substr($sensorDataStr, 0,1),
+        'inRoom' => intval(substr($sensorDataStr, 1,1)),
+        'temperature' => intval(substr($sensorDataStr, 2, 2)),
+        'humidity' => intval(substr($sensorDataStr, 4, 2)),
+        'airQuality' => intval(substr($sensorDataStr, 6, 4)),
+        'lux' => intval(substr($sensorDataStr, 10, 4)),
+        'watts' => intval(substr($sensorDataStr, 14, 4))
         );
 
     return $sensorDataArr;

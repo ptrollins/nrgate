@@ -4,7 +4,8 @@
 	$db_host = "localhost"; //Host address (most likely localhost)
 	$db_name = "nrgate"; //Name of Database
 	$db_user = "root"; //Name of database user
-	$db_pass = "root"; //Password for database user
+	//$db_pass = "root"; //Password for database user
+	$db_pass = "";
 
 //following variable declaration
 	GLOBAL $errors;
