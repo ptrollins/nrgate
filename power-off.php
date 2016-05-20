@@ -20,7 +20,7 @@ require_once("header.php");
     </a>
 
     <div class="power-off-row">
-        <a href="power-api.php" style="height: 60%;">
+        <a href="black.php" style="height: 60%;">
             <img src="./style/images/power-switch.png" height="100%">
         </a>
 

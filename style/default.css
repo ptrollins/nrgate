@@ -30,15 +30,13 @@ input[type=checkbox]
   -webkit-transform: scale(12); /* Safari and Chrome */
   -o-transform: scale(12); /* Opera */
 
-display:inline-block;
-width: 2vw;
-margin: 20px 150px;
-position: relative;
+	display:inline-block;
+	width: 2vw;
+	margin: 20px 150px;
+	position: relative;
 
-vertical-align:middle;
-background: #32b2a6;
-
-
+	vertical-align:middle;
+	background: #32b2a6;
 }
 
 

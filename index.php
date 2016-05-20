@@ -2,14 +2,13 @@
 
 require_once("config.php");
 require_once("header.php");
-
 ?>
 <body class="main power-graph-page">
     <header class="header-row" >
         <div>
             <img src="style/images/fortum.png" height="100">
         </div>
-        <div id="clock" class="clock"><?php echo date("H:i", time()) ?></div>
+        <div id="clock" class="clock"><?php echo date("H:i", time())?></div>
         <div class="logo">
             <img src="style/images/acre.png" height="100">
         </div>
